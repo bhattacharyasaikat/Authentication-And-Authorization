@@ -27,7 +27,6 @@ exports.signup = async (req, res) => {
 
 
         //secure password
-        console.log(`password is ${password}`)
         let hashedPassword;
         try {
             hashedPassword = await bcrypt.hash(password, 10); // check bcrypt documantation
